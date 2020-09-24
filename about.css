@@ -184,7 +184,7 @@ section {
 #edc988
 font color: #ffeadb #39464c 
 */
-nav,
+
 header,
 main,
 footer {
@@ -337,18 +337,18 @@ footer {
   }
   
   .footer-title h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
   .footer-links {
-    width: 30%;
+    width: 10%;
     display: flex;
     justify-content: space-evenly;
   }
   
   .footer-links a {
     color: #ffeadb;
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
 @media (max-width: 1000px) {

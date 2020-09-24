@@ -184,7 +184,7 @@ section {
 #edc988
 font color: #ffeadb #39464c 
 */
-nav,
+
 header,
 main,
 footer {
@@ -228,7 +228,7 @@ header {
   background-image: url("img/header-img3.jpg");
   background-size: cover;
   background-position: center;
-  padding: 15%;
+  padding: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,10 +251,11 @@ header h1 {
 
 header a {
   font-size: 2rem;
-  /* border: 2px solid #edc988; */
+  border: 2px solid #edc988;
+  background: #73502a;
   padding: 2% 5%;
   border-radius: 50px;
-  /* margin: 5%; */
+  margin-right: 5%;
 }
 
 .container1 {
@@ -263,7 +264,13 @@ header a {
   background-position: center;
   color: #ffeadb;
   display: flex;
-  padding: 10%;
+  padding: 5%;
+}
+
+main h2 {
+  font-size: 3rem;
+  color: #ee6651;
+  margin: 2%;
 }
 
 .container2 {
@@ -272,7 +279,7 @@ header a {
   background-position: center;
   color: #ffeadb;
   display: flex;
-  padding: 10%;
+  padding: 5%;
 }
 
 main div {
@@ -301,27 +308,27 @@ main img {
 }
 
 footer {
-    background-color: #bf9155;
-    /* padding: 5% 2%; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-title h3 {
-    font-size: 2.5rem;
-  }
-  
-  .footer-links {
-    width: 30%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .footer-links a {
-    color: #ffeadb;
-    font-size: 2rem;
-  }
+  background-color: #bf9155;
+  /* padding: 5% 2%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title h3 {
+  font-size: 2.5rem;
+}
+
+.footer-links {
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-links a {
+  color: #ffeadb;
+  font-size: 2rem;
+}
 
 @media (max-width: 1000px) {
   div.nav-links {
