@@ -251,6 +251,12 @@ a {
         flex-direction: column;
         justify-content: space-around;
     }
+    .box {
+        margin-bottom: 5%;
+    }
+    .box-img {
+        display: none;
+    }
     #categories h3 {
         font-size: 1.8rem;
     }
