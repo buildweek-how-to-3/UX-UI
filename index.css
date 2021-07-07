@@ -1,0 +1,517 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /*you can never be bigger than your parent*/
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*general styles*/
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  /*doesn't need a unit of measurement*/
+  font-family: "Quicksand", sans-serif;
+  color: #4f4f4f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka One", sans-serif;
+  color: #edc988;
+}
+
+a {
+  text-decoration: none;
+  /*removes underline from links*/
+  color: #4f4f4f;
+}
+
+section {
+  padding: 4% 0;
+}
+
+/* My Styles */
+/* color way: https://colorhunt.co/palette/206844
+#bf9155
+#73502a
+#ee6651
+#fb9b73
+#edc988
+font color: #ffeadb #39464c 
+*/
+
+header,
+main,
+footer {
+  padding: 1.5%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #bf9155;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  width: 50%;
+  border-radius: 50px;
+}
+
+.nav-links {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  /* border: 2px solid #edc988; */
+  border-radius: 50px;
+  padding: 1.2%;
+  margin: 1.2%;
+  color: #edc988;
+  text-align: center;
+  font-size: 2rem;
+}
+
+header {
+  background-image: url("img/header-img3.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1,
+a {
+  color: #edc988;
+}
+
+header h1 {
+  font-size: 10rem;
+}
+
+.header-links {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+header a {
+  font-size: 2rem;
+  border: 2px solid #edc988;
+  background: #73502a;
+  padding: 2% 5%;
+  border-radius: 50px;
+  margin-right: 5%;
+}
+
+.container1 {
+  background: url(img/main-background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffeadb;
+  display: flex;
+  padding: 5%;
+}
+
+main h2 {
+  font-size: 3rem;
+  color: #ee6651;
+  margin: 2%;
+}
+
+.container2 {
+  background: url(img/main-img2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffeadb;
+  display: flex;
+  padding: 5%;
+}
+
+main div {
+  width: 50%;
+}
+
+.mid-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main img {
+  width: 90%;
+  border-radius: 10px;
+  margin-right: 20%;
+  opacity: 0.92;
+}
+
+.mid-para {
+  font-size: 2rem;
+}
+
+.mid-para p {
+  padding-bottom: 5%;
+}
+
+footer {
+  background-color: #bf9155;
+  /* padding: 5% 2%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title h3 {
+  font-size: 2.5rem;
+}
+
+.footer-links {
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-links a {
+  color: #ffeadb;
+  font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+  div.nav-links {
+    width: 70%;
+  }
+
+  /* nav a {
+    width: 20%;
+    padding: 2%;
+  } */
+
+  /* nav a:nth-child(3) {
+    width: 25%;
+    padding: 2%;
+  } */
+
+  header h1 {
+    font-size: 15rem;
+  }
+
+  .header-links {
+    width: 100%;
+  }
+
+  header a {
+    /* width: 25%; */
+  }
+
+  .mid-para p {
+    font-size: 3rem;
+  }
+
+  .mid-para {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  div.nav-links {
+    width: 70%;
+  }
+
+  /* nav a {
+    width: 26%;
+    padding: 2%;
+  } */
+
+  /* nav a:nth-child(3) {
+    width: 40%;
+    padding: 2%;
+  } */
+
+  header h1 {
+    font-size: 10rem;
+  }
+
+  .header-links {
+    width: 100%;
+  }
+
+  /* header a {
+    width: 50%;
+    font-size: 3rem;
+  } */
+
+  .mid-para p {
+    font-size: 2rem;
+  }
+
+  .mid-para {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav img {
+    width: 50%;
+  }
+
+  nav div {
+    width: 50%;
+  }
+
+  nav a {
+    padding: 2%;
+  }
+
+  header h1 {
+    font-size: 6rem;
+  }
+
+  .header-links {
+    width: 100%;
+  }
+
+  header a {
+    width: 50%;
+    font-size: 2.5rem;
+  }
+
+  .mid-img {
+    display: none;
+  }
+
+  .mid-para {
+    width: 100%;
+  }
+
+  .mid-para p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  nav img {
+    width: 50%;
+  }
+
+  nav a {
+    font-size: 1.6rem;
+    padding: 2%;
+  }
+
+  header h1 {
+    font-size: 6rem;
+  }
+
+  .header-links {
+    width: 70%;
+  }
+
+  header a {
+    width: 50%;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .mid-img {
+    display: none;
+  }
+
+  .mid-para {
+    width: 100%;
+  }
+
+  .mid-para p {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  nav img {
+    width: 50%;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 2%;
+  }
+
+  header h1 {
+    font-size: 6rem;
+  }
+
+  .header-links {
+    width: 100%;
+  }
+
+  header a {
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .mid-img {
+    display: none;
+  }
+
+  .mid-para {
+    width: 100%;
+  }
+
+  .mid-para p {
+    font-size: 2rem;
+  }
+}
